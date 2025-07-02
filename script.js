@@ -1,4 +1,19 @@
 /* 헤더 스크립트 시작 */
+function logoShowAndHide() {
+  $(window).scroll(function() {
+    let $this = $(this);
+    let scTop = $this.scrollTop(); // 스크롤 위치
+
+    if ( scTop > 0 ) {
+      $(".logo_wrap").addClass('is_scroll');
+    } else {
+      $(".logo_wrap").removeClass('is_scroll');
+    }
+  });
+}
+
+logoShowAndHide();
+
 $(".dropBtn").click(function () {
     var dropdownContent = $(".dropdown_content");
     var $this = $(this);

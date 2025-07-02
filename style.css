@@ -113,6 +113,15 @@ header {
 }
 
 /* 로고 */
+header .logo_wrap {
+  transition: visibility .3s, opacity .3s;
+}
+
+header .logo_wrap.is_scroll {
+  visibility: hidden;
+  opacity: 0;
+}
+
 header .logo_wrap > a {
   width: 116px;
 }
